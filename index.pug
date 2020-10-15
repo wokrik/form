@@ -1,0 +1,29 @@
+html
+    head
+        link(rel='stylesheet' href='css/main.css')
+    body
+        .main-screen
+            .button.button_primary(data-action='open_modal' data-target='form') Войти
+        .modal(data-modal='form' data-content='modal')
+            .modal__content
+                .modal__close
+                form.form
+                    .form-element.form__email
+                        input.form__input(type='email' placeholder='Email')
+                        span.error Введите email
+                    .form-element.form__password
+                        input.form__input(type='password' placeholder='Пароль')
+                        span.error Введите пароль
+                    .form__actions
+                        .form__login
+                            .button.button_primary(data-action='submit') Войти
+                        a.form__register(href='#') Регистрация
+                        span.error.form__no-access Что-то пошло не так. Пожалуйста, попробуйте еще раз
+                    .form__caption или через соцсети
+                    .form__socials
+                            a.social-element.form__vk(href='#')
+                                img(src='img/vk.svg')
+                            a.social-element.form__facebook(href='#')
+                                img(src='img/fb.svg')
+
+        script(src='js/main.js')

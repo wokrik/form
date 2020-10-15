@@ -1,0 +1,32 @@
+
+<html>
+  <head>
+    <link rel="stylesheet" href="css/main.css"/>
+  </head>
+  <body>
+    <div class="main-screen">
+      <div class="button button_primary" data-action="open_modal" data-target="form">Войти</div>
+    </div>
+    <div class="modal" data-modal="form" data-content="modal">
+      <div class="modal__content">
+        <div class="modal__close"></div>
+        <form class="form">
+          <div class="form-element form__email">
+            <input class="form__input" type="email" placeholder="Email"/><span class="error">Введите email</span>
+          </div>
+          <div class="form-element form__password">
+            <input class="form__input" type="password" placeholder="Пароль"/><span class="error">Введите пароль</span>
+          </div>
+          <div class="form__actions">
+            <div class="form__login">
+              <div class="button button_primary" data-action="submit">Войти</div>
+            </div><a class="form__register" href="#">Регистрация</a><span class="error form__no-access">Что-то пошло не так. Пожалуйста, попробуйте еще раз</span>
+          </div>
+          <div class="form__caption">или через соцсети</div>
+          <div class="form__socials"><a class="social-element form__vk" href="#"><img src="img/vk.svg"/></a><a class="social-element form__facebook" href="#"><img src="img/fb.svg"/></a></div>
+        </form>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
